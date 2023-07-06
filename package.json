@@ -18,6 +18,7 @@
     "dev": "dotenv -- turbo dev --parallel --no-cache",
     "reset": "rm -f yarn.lock && git clean -xdf && yarn prep",
     "prep": "yarn install && yarn pod-install && husky install && yarn db:start && yarn db:push",
+    "mobile": "dotenv -- yarn workspace @superlight-labs/mobile dev",
     "db:start": "dotenv -- yarn workspace @superlight-labs/database start",
     "db:push": "dotenv -- yarn workspace @superlight-labs/database run db:push",
     "db:reset": "dotenv -- yarn workspace @superlight-labs/database run db:reset",
