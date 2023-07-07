@@ -14,8 +14,10 @@ const WelcomeSlide2 = () => {
       />
       <Image className="h-72 w-screen" source={require('../../../assets/images/lines-2.png')} />
 
-      <Title style="text-4xl text-slate-400 font-manrope-bold mt-16">Non custodial.</Title>
-      <Text className="mt-2 text-center font-manrope-bold text-4xl">You are in control.</Text>
+      <View className="flex-1 items-center justify-center">
+        <Title style="text-4xl text-slate-400 font-manrope-bold">Non custodial.</Title>
+        <Text className="mt-2 text-center font-manrope-bold text-4xl">You are in control.</Text>
+      </View>
     </View>
   );
 };
